@@ -1,3 +1,4 @@
+
 int maxUp = 10;
 int minDown = 1;
 int delayT = 1000;
@@ -14,7 +15,8 @@ void loop() {
   //start = start + direction;
 
   if(start>10 || start<1) {
-    direction = -1;
+    Serial.println("Change direction");
+    direction = direction * (-1);
   }
   start = start + direction;
   
